@@ -1,0 +1,27 @@
+export const theme = {
+  colors: {
+    bg: "#050508",              // almost black
+    fg: "#F4F4FF",              // near-white text
+
+    muted: "rgba(244,244,255,0.65)",
+    border: "rgba(255,255,255,0.10)",
+
+    glassBg: "rgba(255,255,255,0.06)",
+    glassBgStrong: "rgba(255,255,255,0.09)",
+
+    glowPurple: "rgba(168, 85, 247, 0.35)", // purple glow
+    glowPink: "rgba(236, 72, 153, 0.25)",   // pink glow
+
+    primaryFrom: "#A855F7",     // purple
+    primaryTo: "#EC4899",       // pink
+  },
+
+  radius: {
+    xl: "20px",
+    pill: "999px",
+  },
+
+  blur: {
+    glass: "18px",
+  },
+};

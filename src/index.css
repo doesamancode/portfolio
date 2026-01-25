@@ -1,0 +1,116 @@
+@import "tailwindcss";
+@import "./styles/utilities.css";
+
+:root{
+  --bg: #050508;
+  --fg: #F4F4FF;
+
+  --muted: rgba(244,244,255,0.62);
+  --border: rgba(255,255,255,0.10);
+
+  --glass: rgba(12,12,18,0.55); 
+  --glass-strong: rgba(12,12,18,0.70);
+
+  --primary-from: rgba(69, 44, 255, 1);
+  --primary-to: rgba(162, 72, 236, 1);
+
+  --edge-glow-1: rgba(69, 44, 255, 0.55);
+  --edge-glow-2: rgba(162, 72, 236, 0.38);
+}
+
+html, body {
+  height: 100%;
+  background: var(--bg);
+  color: var(--fg);
+}
+
+#root {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+::selection {
+  background: rgba(168, 85, 247, 0.35);
+  color: var(--fg);
+}
+
+@keyframes blobA {
+  0% { transform: translate(0px, 0px) scale(1); }
+  33% { transform: translate(70px, 40px) scale(1.08); }
+  66% { transform: translate(40px, 90px) scale(0.95); }
+  100% { transform: translate(0px, 0px) scale(1); }
+}
+
+@keyframes blobB {
+  0% { transform: translate(0px, 0px) scale(1); }
+  33% { transform: translate(-80px, -50px) scale(1.05); }
+  66% { transform: translate(-30px, -100px) scale(0.96); }
+  100% { transform: translate(0px, 0px) scale(1); }
+}
+
+@keyframes mouseFloat {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-blobA {
+  animation: blobA 18s ease-in-out infinite;
+}
+
+.animate-blobB {
+  animation: blobB 20s ease-in-out infinite;
+}
+
+.mouse-float {
+  animation: mouseFloat 2.2s ease-in-out infinite;
+  filter: drop-shadow(0 0 14px rgba(255,255,255,0.35));
+}
+@keyframes blobA {
+  0%   { transform: translate(0px, 0px) scale(1); }
+  25%  { transform: translate(140px, 80px) scale(1.10); }
+  50%  { transform: translate(80px, 160px) scale(0.98); }
+  75%  { transform: translate(170px, 120px) scale(1.07); }
+  100% { transform: translate(0px, 0px) scale(1); }
+}
+
+@keyframes blobB {
+  0%   { transform: translate(0px, 0px) scale(1); }
+  25%  { transform: translate(-160px, -90px) scale(1.12); }
+  50%  { transform: translate(-90px, -170px) scale(0.98); }
+  75%  { transform: translate(-190px, -120px) scale(1.08); }
+  100% { transform: translate(0px, 0px) scale(1); }
+}
+
+.animate-blobA {
+  animation: blobA 22s ease-in-out infinite;
+}
+
+.animate-blobB {
+  animation: blobB 26s ease-in-out infinite;
+}
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-33.333%); }
+}
+
+@keyframes marqueeReverse {
+  0% { transform: translateX(-33.333%); }
+  100% { transform: translateX(0); }
+}
+
+.animate-marquee {
+  animation: marquee 18s linear infinite;
+}
+
+.animate-marqueeReverse {
+  animation: marqueeReverse 22s linear infinite;
+}
