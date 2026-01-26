@@ -18,6 +18,23 @@ function MouseIcon() {
   );
 }
 
+function PlayIcon() {
+  return (
+    <svg
+      className="h-4 w-4 text-[var(--fg)]"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 256 256"
+      fill="currentColor"
+    >
+      <path
+        d="M228.23,134.69,84.15,222.81A8,8,0,0,1,72,216.12V39.88a8,8,0,0,1,12.15-6.69l144.08,88.12A7.82,7.82,0,0,1,228.23,134.69Z"
+        opacity="0.2"
+      />
+      <path d="M232.4,114.49,88.32,26.35a16,16,0,0,0-16.2-.3A15.86,15.86,0,0,0,64,39.87V216.13A15.94,15.94,0,0,0,80,232a16.07,16.07,0,0,0,8.36-2.35L232.4,141.51a15.81,15.81,0,0,0,0-27ZM80,215.94V40l143.83,88Z" />
+    </svg>
+  );
+}
+
 export default function HeroSection() {
   return (
     <section className="relative">
@@ -40,14 +57,14 @@ export default function HeroSection() {
 
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
             <GlowButton href="#showreel" size="lg">
-              ▶ Watch Showreel
+              <PlayIcon /> Watch Showreel
             </GlowButton>
 
             <a
               href="#projects"
-              className="rounded-full border border-white/10 bg-[var(--glass)] px-7 py-3.5 text-base text-[var(--fg)]/85 backdrop-blur-xl transition hover:bg-[var(--glass-strong)] hover:text-[var(--fg)]"
+              className="rounded-[var(--radius-btn)] border border-white/10 bg-[var(--glass)] px-7 py-3.5 text-base text-[var(--fg)]/85 backdrop-blur-xl transition hover:bg-[var(--glass-strong)] hover:text-[var(--fg)]"
             >
-              See Projects
+              View Projects
             </a>
           </div>
 
@@ -60,11 +77,12 @@ export default function HeroSection() {
 
           <div className="mt-10 flex items-center justify-center gap-4 text-xs text-[var(--muted)]">
             <span>Scroll down</span>
-            <span className="h-[1px] w-40 bg-white/10" />
+            <span className="h-[1px] w-16 bg-white/10" />
             <MouseIcon />
-            <span className="h-[1px] w-40 bg-white/10" />
+            <span className="h-[1px] w-16 bg-white/10" />
             <span>to see projects</span>
           </div>
+
           <TrustMarquee />
         </div>
       </div>

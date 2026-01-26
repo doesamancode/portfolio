@@ -12,10 +12,14 @@
   --glass-strong: rgba(12,12,18,0.70);
 
   --primary-from: rgba(69, 44, 255, 1);
-  --primary-to: rgba(162, 72, 236, 1);
+  --primary-to: rgba(57, 26, 175, 1);
+  /* --primary-to: rgba(162, 72, 236, 1); */
 
   --edge-glow-1: rgba(69, 44, 255, 0.55);
-  --edge-glow-2: rgba(162, 72, 236, 0.38);
+  --edge-glow-2: rgba(57, 26, 175, 0.38);
+
+  --radius-btn: 16px;
+  --radius-card: 22px;
 }
 
 html, body {

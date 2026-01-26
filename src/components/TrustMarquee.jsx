@@ -37,7 +37,7 @@ function Row({ reverse = false }) {
 export default function TrustMarquee() {
   return (
     <div className="mt-10 w-full">
-      <div className="rounded-2xl border border-white/10 bg-[var(--glass)] px-6 py-4 backdrop-blur-xl">
+      <div className="rounded-[var(--radius-card)] border border-white/10 bg-[var(--glass)] px-6 py-4 backdrop-blur-xl">
         <div className="text-center text-sm text-[var(--muted)]">
           Worked with creators & brands across platforms
         </div>
