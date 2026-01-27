@@ -11,7 +11,7 @@ export default function ShowreelSection() {
             A curated selection of my best editing work — storytelling, pacing, sound design and visual impact.
           </p>
 
-          <div className="mt-10 rounded-[var(--radius-card)] border border-white/10 bg-[var(--glass)] p-4 backdrop-blur-xl">
+          <div className="mt-10 rounded-[var(--radius-card)] border border-white/10 liquid-glass p-4 backdrop-blur-xl">
             <div className="relative aspect-video w-full overflow-hidden rounded-[calc(var(--radius-card)-6px)] border border-white/10 bg-black/40">
               <div className="absolute inset-0 grid place-items-center">
                 <div className="text-center">

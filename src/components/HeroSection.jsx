@@ -55,18 +55,18 @@ export default function HeroSection() {
             high-impact videos that engage audiences and drive results.
           </p>
 
-          <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
-            <GlowButton href="#showreel" size="lg">
-              <PlayIcon /> Watch Showreel
-            </GlowButton>
+            <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
+              <GlowButton href="#showreel" size="lg">
+                <PlayIcon /> Watch Showreel
+              </GlowButton>
 
-            <a
-              href="#projects"
-              className="rounded-[var(--radius-btn)] border border-white/10 bg-[var(--glass)] px-7 py-3.5 text-base text-[var(--fg)]/85 backdrop-blur-xl transition hover:bg-[var(--glass-strong)] hover:text-[var(--fg)]"
-            >
-              View Projects
-            </a>
-          </div>
+              <a
+                href="#projects"
+                className="rounded-[var(--radius-btn)] border border-white/10 bg-[var(--glass)] px-7 py-3.5 text-base text-[var(--fg)]/85 backdrop-blur-xl transition hover:bg-[var(--glass-strong)] hover:text-[var(--fg)]"
+              >
+                View Projects
+              </a>
+            </div>
 
           <div className="mt-14 flex flex-wrap items-center justify-center gap-x-10 gap-y-3 text-xs uppercase tracking-[0.25em] text-[var(--fg)]/55">
             <span>Premiere Pro</span>

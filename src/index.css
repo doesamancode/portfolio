@@ -8,15 +8,18 @@
   --muted: rgba(244,244,255,0.62);
   --border: rgba(255,255,255,0.10);
 
-  --glass: rgba(12,12,18,0.55); 
-  --glass-strong: rgba(12,12,18,0.70);
+  --glass: rgba(255, 255, 255, 0.08);
+  --glass-strong: rgba(255, 255, 255, 0.12);
+  --glass-border: rgba(255, 255, 255, 0.16);
+  --glass-highlight: rgba(255, 255, 255, 0.22);
+  --glass-shadow: rgba(0, 0, 0, 0.35);
 
-  --primary-from: rgba(69, 44, 255, 1);
-  --primary-to: rgba(57, 26, 175, 1);
+  --primary-from: rgba(0, 255, 250, 1);
+  --primary-to: rgba(50, 125, 200, 1);
   /* --primary-to: rgba(162, 72, 236, 1); */
 
-  --edge-glow-1: rgba(69, 44, 255, 0.55);
-  --edge-glow-2: rgba(57, 26, 175, 0.38);
+  --edge-glow-1: rgba(0, 255, 250, 0.55);
+  --edge-glow-2: rgba(50, 125, 200, 0.38);
 
   --radius-btn: 16px;
   --radius-card: 22px;
@@ -117,4 +120,22 @@ a {
 
 .animate-marqueeReverse {
   animation: marqueeReverse 22s linear infinite;
+}
+
+.liquid-glass {
+  background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.14) 0%,
+      rgba(255, 255, 255, 0.08) 35%,
+      rgba(255, 255, 255, 0.06) 100%
+  );
+  border: 1px solid var(--glass-border);
+  border-top-color: var(--glass-highlight);
+  border-left-color: var(--glass-highlight);
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
+  box-shadow:
+    inset 1px 1px 0 rgba(255,255,255,0.10),
+    inset -1px -1px 0 rgba(0,0,0,0.25),
+    0 18px 60px rgba(0,0,0,0.45);
 }

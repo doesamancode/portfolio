@@ -31,7 +31,10 @@ export default function GlowButton({
         <span className="absolute inset-0 rounded-[var(--radius-btn)] border border-transparent [background:linear-gradient(var(--glass),var(--glass))_padding-box,linear-gradient(90deg,var(--primary-from),var(--primary-to))_border-box]" />
       </span>
 
-      <span className="relative z-10">{children}</span>
+      <span className="relative z-10 inline-flex items-center justify-center gap-2">
+        {children}
+      </span>
+
     </a>
   );
 }
