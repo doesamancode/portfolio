@@ -5,6 +5,7 @@ import HeroSection from "./components/HeroSection";
 import ShowreelSection from "./components/ShowreelSection";
 import ProjectsSection from "./components/ProjectsSection";
 import ServicesSection from "./components/ServicesSection";
+import ReviewsSection from "./components/ReviewsSection";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
         <ShowreelSection />
         <ProjectsSection />
         <ServicesSection />
+        <ReviewsSection />
       </main>
     </div>
   );

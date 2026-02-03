@@ -44,7 +44,6 @@ const processSteps = [
   },
 ];
 
-
 function ServiceCard({ title, desc, tag }) {
   return (
     <div className="liquid-glass rounded-[var(--radius-card)] p-5">
@@ -88,23 +87,19 @@ export default function ServicesSection() {
   return (
     <section id="services" className="relative py-20">
       <div className="mx-auto max-w-8xl px-30 py-1">
-        <div className="mb-10 text-center">
-          <h2 className="text-2xl font-semibold tracking-tight text-[var(--fg)] sm:text-3xl">
-            What I Do
-          </h2>
-          <p className="mt-3 text-[var(--muted)]">
-            High-end editing, storytelling and motion — designed for creators & brands.
+        <div className="text-center">
+          <h3 className="text-xl font-semibold tracking-tight text-[var(--fg)] sm:text-2xl">
+            From Idea → Premium Video
+          </h3>
+          <p className="mt-3  text-[var(--muted)]">
+            Clear communication. Fast iterations. High-end polish — so your
+            content looks expensive and performs better.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 py-8 lg:grid-cols-4">
           {services.map((s, idx) => (
-            <ServiceCard
-              key={idx}
-              title={s.title}
-              desc={s.desc}
-              tag={s.tag}
-            />
+            <ServiceCard key={idx} title={s.title} desc={s.desc} tag={s.tag} />
           ))}
         </div>
 
