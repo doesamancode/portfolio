@@ -6,6 +6,7 @@ import ShowreelSection from "./components/ShowreelSection";
 import ProjectsSection from "./components/ProjectsSection";
 import ServicesSection from "./components/ServicesSection";
 import ReviewsSection from "./components/ReviewsSection";
+import FinalCTASection from "./components/FinalCTASection";
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
         <ProjectsSection />
         <ServicesSection />
         <ReviewsSection />
+        <FinalCTASection />
       </main>
     </div>
   );

@@ -1,5 +1,6 @@
 import GlowButton from "./ui/GlowButton";
 import TrustMarquee from "./TrustMarquee";
+import Plasma from "./Plasma";
 
 function MouseIcon() {
   return (
@@ -37,8 +38,20 @@ function PlayIcon() {
 
 export default function HeroSection() {
   return (
-    <section className="relative">
-      <div className="mx-auto max-w-8xl px-30 py-1">
+    <section className="relative min-h-[92vh] overflow-hidden">
+      {/* Plasma background – now perfectly bound to hero */}
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        <Plasma
+          color="#00fffb"
+          speed={0.6}
+          scale={1.6}
+          opacity={0.55}
+          mouseInteractive={true}
+        />
+      </div>
+
+      {/* Content */}
+      <div className="relative z-10 mx-auto max-w-8xl px-30 py-1">
         <div className="flex min-h-[92vh] flex-col items-center justify-center text-center">
           <div className="mb-7 inline-flex items-center gap-2 rounded-full border border-white/10 bg-[var(--glass)] px-4 py-2 text-sm text-[var(--muted)] backdrop-blur-xl">
             <span className="h-2 w-2 rounded-full bg-[var(--primary-from)]" />
@@ -51,22 +64,23 @@ export default function HeroSection() {
           </h1>
 
           <p className="mt-6 max-w-2xl text-pretty text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-            I help creators, brands, and businesses turn raw footage into cinematic,
-            high-impact videos that engage audiences and drive results.
+            I help creators, brands, and businesses turn raw footage into
+            cinematic, high-impact videos that engage audiences and drive
+            results.
           </p>
 
-            <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
-              <GlowButton href="#showreel" size="lg">
-                <PlayIcon /> Watch Showreel
-              </GlowButton>
+          <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
+            <GlowButton href="#showreel" size="lg">
+              <PlayIcon /> Watch Showreel
+            </GlowButton>
 
-              <a
-                href="#projects"
-                className="rounded-[var(--radius-btn)] border border-white/10 bg-[var(--glass)] px-7 py-3.5 text-base text-[var(--fg)]/85 backdrop-blur-xl transition hover:bg-[var(--glass-strong)] hover:text-[var(--fg)]"
-              >
-                View Projects
-              </a>
-            </div>
+            <a
+              href="#projects"
+              className="rounded-[var(--radius-btn)] border border-white/10 bg-[var(--glass)] px-7 py-3.5 text-base text-[var(--fg)]/85 backdrop-blur-xl transition hover:bg-[var(--glass-strong)] hover:text-[var(--fg)]"
+            >
+              View Projects
+            </a>
+          </div>
 
           <div className="mt-14 flex flex-wrap items-center justify-center gap-x-10 gap-y-3 text-xs uppercase tracking-[0.25em] text-[var(--fg)]/55">
             <span>Premiere Pro</span>

@@ -14,6 +14,7 @@ export default function GlowButton({
   return (
     <a
       href={href}
+      target="_blank"
       onClick={onClick}
       className={[
         "group relative inline-flex items-center justify-center",
