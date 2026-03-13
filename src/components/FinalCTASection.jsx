@@ -51,16 +51,16 @@ export default function FinalCTASection() {
 
           {/* Primary CTA */}
           <div className="mt-10">
-            <GlowButton href="https://cal.com/" size="lg" className="px-8">
+            <GlowButton href="https://cal.com/amanpathak/book" size="lg" className="px-8">
               Book a Free Call
             </GlowButton>
           </div>
 
           {/* Social / Contact Links */}
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
-            <SocialButton label="Instagram" href="#" />
-            <SocialButton label="X" href="#" />
-            <SocialButton label="Email" href="mailto:hello@example.com" />
+            <SocialButton label="Instagram" href="https://www.instagram.com/amanpathak.vfx/" />
+            <SocialButton label="X" href="https://x.com/amanpathakvfx" />
+            <SocialButton label="Email" href="mailto:apathak.editor@gmail.com" />
           </div>
 
           {/* Footer line */}

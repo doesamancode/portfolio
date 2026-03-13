@@ -97,7 +97,7 @@ export default function HeroSection() {
             <span>to see projects</span>
           </div>
 
-          <TrustMarquee />
+          {/* <TrustMarquee /> */}
         </div>
       </div>
     </section>

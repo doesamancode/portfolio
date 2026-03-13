@@ -44,7 +44,7 @@ export default function Navbar() {
               <NavLink href="#about" label="About" />
               <NavLink href="#contact" label="Contact" />
 
-              <GlowButton href="#contact" size="sm">
+              <GlowButton href="https://cal.com/amanpathak/book" size="sm">
                 Start a Project
               </GlowButton>
             </div>

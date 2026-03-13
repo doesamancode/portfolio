@@ -174,21 +174,21 @@ a {
     0 18px 60px rgba(0,0,0,0.45);
 }
 
-@keyframes reviewsMarquee {
+/* @keyframes reviewsMarquee {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
-}
+} */
 
-.reviews-track {
+/* .reviews-track {
   display: flex;
   width: max-content;
   gap: 1.5rem;
   animation: reviewsMarquee 28s linear infinite;
-}
+} */
 
-.reviews-wrap:hover .reviews-track {
+/* .reviews-wrap:hover .reviews-track {
   animation-play-state: paused;
-}
+} */
 
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);

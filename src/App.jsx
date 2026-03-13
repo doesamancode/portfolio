@@ -14,9 +14,9 @@ export default function App() {
       <Background />
       <Navbar />
 
-      <main className="pt-20">
+      <main className="pt-16">
         <HeroSection />
-        <ShowreelSection />
+        {/* <ShowreelSection /> */}
         <ProjectsSection />
         <ServicesSection />
         <ReviewsSection />

@@ -1,39 +1,39 @@
 const reviews = [
   {
-    name: "Client Name",
-    title: "Founder / CEO",
+    name: "Siddharth Shankar Tripathi",
+    title: "Founder / CEO @ RinggAI",
     review:
-      "Aman’s edit quality is top-tier. The pacing, sound design and final polish made the video feel genuinely premium.",
+      "Working with Aman was a breath of fresh air for our team at Ringg AI. He managed to take our complex SaaS concepts and translate them into top-tier motion graphics with zero friction and perfect communication. It is rare to find someone who can deliver this level of quality without the usual project management headaches. If you're looking for high-impact results and a seamless workflow, I highly recommend him.",
     rating: 5,
   },
   {
-    name: "Client Name",
-    title: "Marketing Head",
+    name: "Abhishek",
+    title: "UX Designer - Germany",
     review:
-      "Super smooth workflow. Communication was clear, edits were fast, and the final output exceeded our expectations.",
+      "Aman Pathak is one of those guys who really understands concepts well. He takes the vision, turns it into a clear storyboard, and then transforms that into videos that are always really stunning. Whenever he works on something, he fully understands the concept of what I’m saying and turns it into a truly impactful video. Some of the videos have gained great attention and strong insights as well. Even with a simple explanation, he knows how to develop the story properly. He also listens carefully to all the requirements. And yes, he’s fast too.",
     rating: 5,
   },
   {
-    name: "Client Name",
-    title: "Content Creator",
+    name: "Elmi Dela Cruz",
+    title: "Project Manager @ Clifton Creations",
     review:
-      "Retention improved instantly. The hook placement, cut timing and motion details were done with real skill.",
+      "We’ve had a great experience working with Aman. He has been consistently responsive, communicative, and dependable throughout our projects. Even when we’ve had tight deadlines, Aman has been willing to stretch and accommodate our timelines without compromising professionalism. He’s easy to work with and open to feedback, making collaboration smooth and efficient.",
     rating: 5,
   },
-  {
-    name: "Client Name",
-    title: "Brand Manager",
-    review:
-      "Clean edits, premium transitions and amazing finishing touches. Everything stayed consistent with our brand.",
-    rating: 5,
-  },
-  {
-    name: "Client Name",
-    title: "SaaS Growth Lead",
-    review:
-      "The explainer was clear, structured and stylish. It didn’t just look good — it actually sold the product better.",
-    rating: 5,
-  },
+  // {
+  //   name: "Client Name",
+  //   title: "Brand Manager",
+  //   review:
+  //     "Clean edits, premium transitions and amazing finishing touches. Everything stayed consistent with our brand.",
+  //   rating: 5,
+  // },
+  // {
+  //   name: "Client Name",
+  //   title: "SaaS Growth Lead",
+  //   review:
+  //     "The explainer was clear, structured and stylish. It didn’t just look good — it actually sold the product better.",
+  //   rating: 5,
+  // },
 ];
 
 function Stars({ rating }) {
@@ -91,18 +91,17 @@ export default function ReviewsSection() {
           </p>
         </div>
 
-        <div className="reviews-wrap mt-12 overflow-hidden">
-          <div className="reviews-track">
-            {[...reviews, ...reviews].map((r, idx) => (
-              <ReviewCard
-                key={idx}
-                name={r.name}
-                title={r.title}
-                review={r.review}
-                rating={r.rating}
-              />
-            ))}
-          </div>
+        {/* Reviews container */}
+        <div className="mt-14 flex flex-wrap items-center justify-center gap-8">
+          {reviews.map((r, idx) => (
+            <ReviewCard
+              key={idx}
+              name={r.name}
+              title={r.title}
+              review={r.review}
+              rating={r.rating}
+            />
+          ))}
         </div>
       </div>
     </section>
